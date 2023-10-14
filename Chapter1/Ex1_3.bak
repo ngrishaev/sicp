@@ -1,0 +1,5 @@
+(define (square x)
+  (* x x))
+
+(define (max-square-sum a b c)
+  (cond ((and (< a c) (< a b) 
