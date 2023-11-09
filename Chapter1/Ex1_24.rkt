@@ -23,8 +23,6 @@
 
 (define (fast-prime? n times)
   (begin
-    ;(display "Fast prime test!")
-    ;(newline)
     (cond ((= times 0) true)
           ((fermat-test n) (fast-prime? n (- times 1)))
           (else false))))
